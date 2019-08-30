@@ -1,0 +1,11 @@
+<!-- <p>form works!</p>
+<form class="example" action="action_page.php">
+    <input type="text" placeholder="Search.." name="name"  >
+    <button type="submit" ><i class="fa fa-search"></i></button>
+</form> -->
+<form (ngSubmit)="searchFor(searchForm)" #searchForm="ngForm">
+    <div class="form-group">
+      <input type="text" class="form-control" name="find" placeholder="Enter username"[(ngModel)]= "searchInfo.find"  #find='ngModel'>
+      <button type="submit" class="btn btn-group"> Search</button>
+    </div>
+  </form>
