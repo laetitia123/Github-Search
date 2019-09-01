@@ -39,3 +39,6 @@ form{
     clear: both;
     display: table;
   }
+  .col-md-2{
+    margin-left:-40px;
+  }
