@@ -4,6 +4,17 @@
 ## Description
  The project is about GIhub Searching 
 
+## BDD
+>the user will enter his git hubusername
+
+>the user  will be able to see his GithubProfile
+
+>the user has to see Repositories
+  
+>tthe user has to view the profile of entered username
+
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.2.2.
 
 ## Development server
@@ -32,20 +43,6 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 
 
-
-
-## BDD
->the user will first be able to see my forite quotes
-
->the user  will be able to see the auther by click on show details button
-
->the user has to input this or her quote into the form
-
-  
->the the quote written must be displayed
-
->user is able to delete quote
->user is able   to see votes and downloates quote number when he click on corresponding button
 
 
 ## Setup/Installation Requirements
