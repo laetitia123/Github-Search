@@ -18,6 +18,13 @@
      Google clome to get the Webpage
      visual stidio or any other code editor
      linux instalation (option)
+## Technologies Used
+    *Angular 6
+    *jQuery
+    * Bootstrap
+    * Javascript
+    * html
+    * css 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.2.2.
 
@@ -70,13 +77,7 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 ## Known Bugs
  highlithing still not work
 
-## Technologies Used
-    *Angular 6
-    *jQuery
-    * Bootstrap
-    * Javascript
-    * html
-    * css 
+
 ## link to my Github account
 
 https://laetitia1234.github.io/Angular-Quote-App/
