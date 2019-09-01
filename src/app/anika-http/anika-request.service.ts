@@ -11,7 +11,7 @@ export class AnikaRequestService {
   anika: Anika;
   repository:Repository;
   newRepository: any;
-  searchRepo: any;
+//   searchRepo: any;
 
   constructor(private http: HttpClient) {
       this.repository = new Repository('', '', '',new Date(),'');
@@ -32,7 +32,7 @@ export class AnikaRequestService {
       }
 
       let promise = new Promise((resolve,reject) => {
-          this.http.get<ApiResponse>('https://api.github.com/users/' + name + '?access_token=' + environment.  apiUrl).toPromise().then(answer => {
+          this.http.get<ApiResponse>('https://api.github.com/users/' + name+ '?access_token=' + environment.  apiUrl).toPromise().then(answer => {
               this.anika.name =answer.name;
               this.anika.html_url = answer.html_url;
               this.anika.login = answer.login;
@@ -60,41 +60,43 @@ export class AnikaRequestService {
 
   }
 
-  gitUserRepos(name) {
+  Repos(name) {
       interface ApiResponse {
           name: string;
           description: string;
           created_at: Date;
       }
 
-      let  myPromise = new Promise((resolve, reject) => {
-          this.http.get<ApiResponse>('https://api.github.com/users/' + name + '/repos?order=created&sort=asc?access_token=' + environment.  apiUrl).toPromise().then(getRepoResponse => {
-              this.newRepository = getRepoResponse;
+      let  toPromise = new Promise((resolve, reject) => {
+          this.http.get<ApiResponse>('https://api.github.com/users/' + name + '/repos?order=created&sort=asc?access_token=' + environment.  apiUrl).toPromise().then(answer => {
+              this.newRepository = answer;
               resolve();
           }, error => {
+            this.anika.name = "Never, never, never give up"
+            //   this.anika.name= "Winston Churchill"
               reject(error);
           });
       });
-      return myPromise;
+      return toPromise;
   }
 
 
-  gitRepos(searchName) {
-      interface ApiResponse {
-          items: any;
-      }
+//   gitRepos(name) {
+//       interface ApiResponse {
+//           items: any;
+//       }
 
-      const promise = new Promise((resolve, reject) => {
-          this.http.get<ApiResponse>('https://api.github.com/search/repositories?q=' + searchName + ' &per_page=10 ' + environment.  apiUrl).toPromise().then(getRepoResponse => {
-              this.searchRepo = getRepoResponse.items;
+//       const promise = new Promise((resolve, reject) => {
+//           this.http.get<ApiResponse>('https://api.github.com/search/repositories?q=' + name + ' &per_page=10 ' + environment.  apiUrl).toPromise().then(getRepoResponse => {
+//               this.searchRepo = getRepoResponse.items;
 
-              resolve();
-          }, error => {
-              this.searchRepo = 'error';
-              reject(error);
-          });
-      });
-      return promise;
-  }
+//               resolve();
+//           }, error => {
+//               this.searchRepo = 'error';
+//               reject(error);
+//           });
+//       });
+//       return promise;
+//   }
 }
 

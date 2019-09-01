@@ -1,20 +1,19 @@
-
 import { Component, OnInit } from '@angular/core';
+import {environment } from '../../environments/environment';
 import { HttpClient } from '@angular/common/http';
 import { Anika} from '../anika';
+import {Repository} from '../repository';
 import { AnikaRequestService} from '../anika-http/anika-request.service';
-import{Repository} from '../repository'
-// import { AnikaRequestService } from '../anika-http/anika-request.service';
-import {environment } from '../../environments/environment';
-
 @Component({
-  selector: 'app-git',
-  templateUrl: './git.component.html',
-  providers: [  AnikaRequestService],
-  styleUrls: ['./git.component.css']
+  selector: 'app-repo',
+  templateUrl: './repo.component.html',
+  providers: [AnikaRequestService],
+  styleUrls: ['./repo.component.css']
 })
+export class RepoComponent implements OnInit {
 
-export class GitComponent implements OnInit {
+
+
 
 public name = 'daneden';
 public user: string;
@@ -38,16 +37,16 @@ ngOnInit() {
   this.userRequest.user(this.name);
   this.anika = this.userRequest.anika;
   this.userRepos.Repos(this.name);
-
+  console.log(this.userRepos);
 }
 
 
-// searchRepos() {
-//     this.searchRepo = '';
-//     this.resultCount = 10;
+searchRepos() {
+    this.searchRepo = '';
+    this.resultCount = 10;
 
-// }
- }
+}
+}
    
 
 
