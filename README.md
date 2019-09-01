@@ -44,7 +44,7 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 
 ## Known Bugs
- highlithing still not work
+ date display 0 
 
 
 ## link to my Github account
