@@ -8,7 +8,8 @@ import { GitComponent } from './git/git.component';
 import { FormComponent } from './form/form.component';
 import{AnikaRequestService} from './anika-http/anika-request.service';
 import { RepoComponent } from './repo/repo.component';
-import { NavbarComponent } from './navbar/navbar.component'
+import { NavbarComponent } from './navbar/navbar.component';
+import { PipePipe } from './pipe.pipe'
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { NavbarComponent } from './navbar/navbar.component'
     GitComponent,
     FormComponent,
     RepoComponent,
-    NavbarComponent
+    NavbarComponent,
+    PipePipe
   ],
   imports: [
     BrowserModule,

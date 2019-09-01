@@ -30,12 +30,19 @@
             Following:{{anika.following}}
           </blockquote>
             <blockquote>
-            Date created: {{anika.created_at | date}}
+            Date created: {{anika.created_at | date |uppercase}}
           </blockquote>
-      </div>
+          <blockquote>
+              <a href="{{anika.html_url}}"><button class ="btn btn-success">view profile on Github</button></a>
+          </blockquote>
+          <blockquote>
+          
+            <p>This goal will be complete in {{anika.created_at|dateCounter}} days</p>
+          </blockquote>
+          </div>
     </div>
    
-    <a href="{{anika.html_url}}"><button class ="btn btn-success">view profile on Github</button></a>
+    
   </div>
 
 
