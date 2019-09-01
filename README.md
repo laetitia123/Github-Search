@@ -13,7 +13,11 @@
   
 >tthe user has to view the profile of entered username
 
-
+## Setup/Installation Requirements
+     computer with Internet
+     Google clome to get the Webpage
+     visual stidio or any other code editor
+     linux instalation (option)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.2.2.
 
@@ -45,11 +49,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 
 
-## Setup/Installation Requirements
-     computer with Internet
-     Google clome to get the Webpage
-     visual stidio or any other code editor
-     linux instalation (option)
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
