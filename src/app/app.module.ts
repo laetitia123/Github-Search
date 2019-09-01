@@ -6,6 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { GitComponent } from './git/git.component';
 import { FormComponent } from './form/form.component';
+import{AnikaRequestService} from './anika-http/anika-request.service'
 
 @NgModule({
   declarations: [
@@ -19,7 +20,7 @@ import { FormComponent } from './form/form.component';
     HttpClientModule,
     FormsModule
   ],
-  providers: [],
+  providers: [AnikaRequestService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

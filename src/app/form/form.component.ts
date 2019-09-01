@@ -6,7 +6,7 @@ import{Anika} from '../anika'
   styleUrls: ['./form.component.css']
 })
 export class FormComponent implements OnInit {
-  searchInfo = new Anika("","","","","","","","");
+  searchInfo =new Anika('', '', '', 0, '', new Date(), 0, 0);
 
   @Output() getName = new EventEmitter<Anika>();
 
