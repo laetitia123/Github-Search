@@ -10,7 +10,8 @@ import{AnikaRequestService} from './anika-http/anika-request.service';
 import { RepoComponent } from './repo/repo.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { PipePipe } from './pipe.pipe'
-
+import { NgProgressModule } from '@ngx-progressbar/core';
+import { NgProgressHttpClientModule } from '@ngx-progressbar/http-client';
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +25,9 @@ import { PipePipe } from './pipe.pipe'
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    NgProgressModule.forRoot(),
+    NgProgressHttpClientModule
   ],
   providers: [AnikaRequestService],
   bootstrap: [AppComponent]

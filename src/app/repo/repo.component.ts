@@ -21,7 +21,7 @@ public user: string;
 anika:Anika ;
 repository: Repository;
 public searchRepo: string;
-public resultCount = 12;
+public result = 24;
 
 
 findUser(username) {
@@ -39,14 +39,8 @@ ngOnInit() {
   this.userRepos.Repos(this.name);
   console.log(this.userRepos);
 }
-
-
-searchRepos() {
-    this.searchRepo = '';
-    this.resultCount = 10;
-
 }
-}
-   
+
+ 
 
 

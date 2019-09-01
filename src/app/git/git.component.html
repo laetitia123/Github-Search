@@ -1,8 +1,8 @@
 
 
 <div class="container">
-
-  <div class="row ">
+  <ng-progress></ng-progress>
+  <div class="row me">
     <div class="col-md-12">
       <app-form (getName)='findUser($event)'></app-form>
     </div>
@@ -40,18 +40,19 @@
               <a href="{{anika.html_url}}"><button class ="btn btn-success">view profile on Github</button></a>
           </blockquote>
           
-          </div>
+        
     </div>
    
     
   </div>
-
+</div>
 
 <div class="container">
-  <div class="row">
-    <div  class="col-md-12">
+  <div class="row me">
+    <div class="col-md-1"></div>
+    <div  class="col-md-8">
       <h2 style="color: #056b5b" > User Repositories</h2>
-      <div class="table table-striped">
+      
         <table class="table">
           <tbody>
           <tr *ngFor='let repository of userRepos.newRepository'>
@@ -67,7 +68,7 @@
           </tbody>
         </table>
       </div>
-    </div>
+
   </div>
 </div>
 <footer style ="background-color:black;height:100px; text-align:center; font-size: 25px;">
