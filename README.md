@@ -48,7 +48,7 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 
 ## link to my Github account
-
+https://laetitia123.github.io/Github-Search/
 
 ## Support and contact details
 Any contribution or support please contact me on my email:uwizelaetitia@gmail.com
